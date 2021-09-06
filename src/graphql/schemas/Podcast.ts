@@ -5,5 +5,6 @@ export default `
         description: String!
         thumbnail: String!
         releaseTime: String!
+        link: String!
     }
 `;

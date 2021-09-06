@@ -6,6 +6,7 @@ export default function(podcasts: FetchedPodcats[]):Podcast[] {
         title: podcast.snippet.title,
         description: podcast.snippet.description,
         thumbnail: podcast.snippet.thumbnails.medium.url,
-        releaseTime: podcast.snippet.publishTime
+        releaseTime: podcast.snippet.publishTime,
+        link: `https://www.youtube.com/embed/${podcast.id.videoId}`
     }));
 }
